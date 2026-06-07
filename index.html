@@ -3,62 +3,110 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>p5.js 작품 모음</title>
+	<title>p5.js Visual Portfolio</title>
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	<div class="background-shape shape-one"></div>
+	<div class="background-shape shape-two"></div>
+	<div class="background-shape shape-three"></div>
+
 	<header class="hero">
-		<p class="eyebrow">Creative Coding Portfolio</p>
-		<h1>나의 p5.js 작품 모음</h1>
+		<p class="eyebrow">P5.JS CREATIVE CODING</p>
+		<h1>정적 이미지에서 동적 인터랙션까지</h1>
 		<p class="description">
-			지금까지 제작한 정적 작품과 동적 작품을 한 페이지에서 바로 감상할 수 있도록 구성했습니다.
+			과제 1~4를 하나의 포트폴리오 화면에 배치했습니다.
+			정적 작품과 동적 작품의 흐름이 보이도록 카드형 그리드와 미리보기 화면을 구성했습니다.
 		</p>
+
+		<div class="layout-note" aria-label="작품 배치 순서">
+			<span>과제 1</span>
+			<span>과제 4</span>
+			<span>과제 2</span>
+			<span>과제 3</span>
+		</div>
 	</header>
 
 	<main id="projects" aria-label="p5.js 과제 작품 목록">
-		<section class="project-card">
-			<div class="card-header">
-				<span class="tag static">정적</span>
-				<h2>과제 1</h2>
+		<section class="project-card warm-card">
+			<div class="card-top">
+				<div>
+					<p class="card-number">01</p>
+					<h2>컬러 도형 콜라주</h2>
+				</div>
+				<span class="tag static">Static</span>
 			</div>
-			<div class="preview">
-				<iframe src="sample1/index.html" title="과제 1 작품"></iframe>
-			</div>
-		</section>
-
-		<section class="project-card">
-			<div class="card-header">
-				<span class="tag dynamic">동적</span>
-				<h2>과제 4</h2>
-			</div>
-			<div class="preview">
-				<iframe src="sample4/index.html" title="과제 4 작품"></iframe>
-			</div>
-		</section>
-
-		<section class="project-card">
-			<div class="card-header">
-				<span class="tag static">정적</span>
-				<h2>과제 2</h2>
-			</div>
-			<div class="preview">
-				<iframe src="sample2/index.html" title="과제 2 작품"></iframe>
+			<p class="card-desc">기본 도형과 색상 조합으로 구성한 정적 추상 이미지</p>
+			<div class="browser-frame">
+				<div class="browser-bar">
+					<span></span><span></span><span></span>
+				</div>
+				<div class="preview">
+					<iframe src="sample1/index.html" title="과제 1 컬러 도형 콜라주"></iframe>
+				</div>
 			</div>
 		</section>
 
-		<section class="project-card">
-			<div class="card-header">
-				<span class="tag dynamic">동적</span>
-				<h2>과제 3</h2>
+		<section class="project-card cool-card">
+			<div class="card-top">
+				<div>
+					<p class="card-number">04</p>
+					<h2>움직이는 추상 애니메이션</h2>
+				</div>
+				<span class="tag dynamic">Dynamic</span>
 			</div>
-			<div class="preview">
-				<iframe src="sample3/index.html" title="과제 3 작품"></iframe>
+			<p class="card-desc">sin, cos, lerpColor를 활용해 색과 크기가 변화하는 동적 작품</p>
+			<div class="browser-frame">
+				<div class="browser-bar">
+					<span></span><span></span><span></span>
+				</div>
+				<div class="preview">
+					<iframe src="sample4/index.html" title="과제 4 움직이는 추상 애니메이션"></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="project-card blue-card">
+			<div class="card-top">
+				<div>
+					<p class="card-number">02</p>
+					<h2>캐릭터 얼굴 드로잉</h2>
+				</div>
+				<span class="tag static">Static</span>
+			</div>
+			<p class="card-desc">얼굴, 머리카락, 안경, 표정을 도형으로 표현한 정적 캐릭터</p>
+			<div class="browser-frame">
+				<div class="browser-bar">
+					<span></span><span></span><span></span>
+				</div>
+				<div class="preview">
+					<iframe src="sample2/index.html" title="과제 2 캐릭터 얼굴 드로잉"></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="project-card pink-card">
+			<div class="card-top">
+				<div>
+					<p class="card-number">03</p>
+					<h2>인터랙티브 캐릭터</h2>
+				</div>
+				<span class="tag dynamic">Dynamic</span>
+			</div>
+			<p class="card-desc">방향키로 이동하고 마우스 클릭으로 볼터치가 바뀌는 인터랙션</p>
+			<div class="browser-frame">
+				<div class="browser-bar">
+					<span></span><span></span><span></span>
+				</div>
+				<div class="preview">
+					<iframe src="sample3/index.html" title="과제 3 인터랙티브 캐릭터"></iframe>
+				</div>
 			</div>
 		</section>
 	</main>
 
 	<footer>
-		<p>p5.js를 활용한 정적/동적 비주얼 작품 포트폴리오</p>
+		<p>HTML · CSS Grid · iframe · p5.js Canvas · Keyboard/Mouse Interaction</p>
 	</footer>
 </body>
 </html>

@@ -17,7 +17,6 @@ function setup() {
 	strokeWeight(2);
 	ellipse(300, 160, 170, 190);
 
-	// 머리
 	fill(50, 35, 25);
 	noStroke();
 	arc(300, 130, 180, 150, PI, TWO_PI);
